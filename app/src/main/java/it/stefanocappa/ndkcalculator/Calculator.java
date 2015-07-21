@@ -45,6 +45,8 @@ public class Calculator extends AppCompatActivity {
         ButterKnife.bind(this);
     }
 
+    //I'm using @OnClick with ButterKnife to set an Action Listener to every
+    //button in a quicker and cleaner way.
     @OnClick(R.id.button1) public void onNum1Clicked(View view) {
         calculateButtonPressed(1);
     }
