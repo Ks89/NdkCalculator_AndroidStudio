@@ -17,20 +17,20 @@
 #include <jni.h>
 #include <stdio.h>
 
-jint
-Java_it_stefanocappa_ndkcalculator_Calculator_sum( JNIEnv* env, jobject thiz, jint a, jint b ) {
-    jint result = a + b;
+jdouble
+Java_it_stefanocappa_ndkcalculator_Calculator_sum( JNIEnv* env, jobject thiz, jdouble a, jdouble b ) {
+    jdouble result = a + b;
     return result;
 }
 
-jint
-Java_it_stefanocappa_ndkcalculator_Calculator_mult( JNIEnv* env, jobject thiz, jint a, jint b ) {
-    jint result = a * b;
+jdouble
+Java_it_stefanocappa_ndkcalculator_Calculator_mult( JNIEnv* env, jobject thiz, jdouble a, jdouble b ) {
+    jdouble result = a * b;
     return result;
 }
 
-jint
-Java_it_stefanocappa_ndkcalculator_Calculator_div( JNIEnv* env, jobject thiz, jint a, jint b ) {
-    jint result = a / b;
+jdouble
+Java_it_stefanocappa_ndkcalculator_Calculator_div( JNIEnv* env, jobject thiz, jdouble a, jdouble b ) {
+    jdouble result = a / b;
     return result;
 }
