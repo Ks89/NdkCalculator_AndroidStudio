@@ -3,8 +3,6 @@ My simple calculator created with NDK in AndroidStudio1.3 RC.
 
 Attention this project requires Android Studio RC1 or greater, gradle 2.5  or greater, and gradle build tool experimental 0.1.0 or greater.
 
-#TODO
-- Add support for number greater than 9 ;)
 
 #License
 
