@@ -34,3 +34,13 @@ Java_it_stefanocappa_ndkcalculator_Calculator_div( JNIEnv* env, jobject thiz, jd
     jdouble result = a / b;
     return result;
 }
+
+jdouble
+Java_it_stefanocappa_ndkcalculator_Calculator_composeNumber( JNIEnv* env, jobject thiz, jdouble temp, jint numPressed ) {
+    if (temp == 0) {
+        temp = numPressed;
+    } else {
+        temp = numPressed + (temp * 10);
+    }
+    return temp;
+}
