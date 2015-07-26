@@ -18,25 +18,27 @@
 #include <stdio.h>
 
 jdouble
-Java_it_stefanocappa_ndkcalculator_Calculator_sum( JNIEnv* env, jobject thiz, jdouble a, jdouble b ) {
+Java_it_stefanocappa_ndkcalculator_Calculator_sum(JNIEnv *env, jobject thiz, jdouble a, jdouble b) {
     jdouble result = a + b;
     return result;
 }
 
 jdouble
-Java_it_stefanocappa_ndkcalculator_Calculator_mult( JNIEnv* env, jobject thiz, jdouble a, jdouble b ) {
+Java_it_stefanocappa_ndkcalculator_Calculator_mult(JNIEnv *env, jobject thiz, jdouble a,
+                                                   jdouble b) {
     jdouble result = a * b;
     return result;
 }
 
 jdouble
-Java_it_stefanocappa_ndkcalculator_Calculator_div( JNIEnv* env, jobject thiz, jdouble a, jdouble b ) {
+Java_it_stefanocappa_ndkcalculator_Calculator_div(JNIEnv *env, jobject thiz, jdouble a, jdouble b) {
     jdouble result = a / b;
     return result;
 }
 
 jdouble
-Java_it_stefanocappa_ndkcalculator_Calculator_composeNumber( JNIEnv* env, jobject thiz, jdouble temp, jint numPressed ) {
+Java_it_stefanocappa_ndkcalculator_Calculator_composeNumber(JNIEnv *env, jobject thiz, jdouble temp,
+                                                            jint numPressed) {
     if (temp == 0) {
         temp = numPressed;
     } else {

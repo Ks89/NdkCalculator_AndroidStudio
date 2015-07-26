@@ -119,7 +119,7 @@ public class Calculator extends AppCompatActivity {
 
     @OnClick(R.id.cancelButton)
     public void onCancelClicked(View view) {
-       resetAll();
+        resetAll();
     }
 
     @OnClick(R.id.equalsButton)
@@ -157,7 +157,7 @@ public class Calculator extends AppCompatActivity {
         resultTextView.setText(temp + "");
     }
 
-    private void resetAll () {
+    private void resetAll() {
         num1 = 0;
         num2 = 0;
         temp = 0;
@@ -165,7 +165,7 @@ public class Calculator extends AppCompatActivity {
         resultTextView.setText("");
     }
 
-    public native double composeNumber(double tempo, int numPressed);
+    public native double composeNumber(double temp, int numPressed);
 
     public native double sum(double a, double b);
 
