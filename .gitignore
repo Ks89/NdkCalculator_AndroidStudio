@@ -8,5 +8,5 @@
 
 .idea
 app/app.iml
-NdkCalculator_AndroidStudio1.3.iml
+*.iml
 build
