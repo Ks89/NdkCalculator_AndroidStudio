@@ -76,7 +76,6 @@ model {
 
     android.ndk {
         moduleName = "calculator"
-        moduleName = "example"
         ldLibs.addAll(['log'])
 //        cppFlags.add("-std=c++11")
 //        cppFlags.add("-fexceptions")
